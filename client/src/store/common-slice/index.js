@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `${import.meta.env.VITE_API_URL}/api/common/feature/get`
+      `https://abnation-tech-ecommerce.onrender.com/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `${import.meta.env.VITE_API_URL}/api/common/feature/add`,
+      `https://abnation-tech-ecommerce.onrender.com/api/common/feature/add`,
       { image }
     );
 

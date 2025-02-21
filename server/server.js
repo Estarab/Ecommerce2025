@@ -30,7 +30,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: process.env.CLIENT_BASE_URL,
+    origin: ["https://abnationtech-ecommerce.onrender.com","http://localhost:5000","http://localhost:5173 ", "https://abnation-tech-ecommerce.onrender.com"],
+
+    // origin: process.env.CLIENT_BASE_URL,
     // origin: "https://localhost:5173",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
